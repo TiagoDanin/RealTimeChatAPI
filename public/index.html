@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+	<div class="uk-section">
+		<div class="uk-container">
+			<div class="uk-card uk-card-default uk-border-rounded">
+
+				<div class="uk-card-body uk-padding-small" id="messageBox"></div>
+
+				<div class="uk-card-footer uk-padding-remove-horizontal">
+					<div class="uk-grid-small uk-flex-middle" uk-grid>
+						<div class="uk-width-expand">
+							<div class="uk-margin-small-left uk-padding-remove-horizontal">
+								<textarea class="uk-textarea uk-padding-remove uk-border-remove" rows="1"
+									id="messageText" placeholder="message..."></textarea>
+							</div>
+						</div>
+						<div class="uk-width-auto">
+							<ul class="uk-iconnav uk-margin-small-right">
+								<button class="uk-button uk-button-default uk-button-small" id="buttonSend">
+									<span uk-icon="icon: chevron-right">Send</span>
+								</button>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/chat.js"></script>
+</body>
+
+</html>
