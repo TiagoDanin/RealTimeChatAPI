@@ -1,7 +1,7 @@
 const socketIo = io()
 const messageText = document.querySelector('#messageText')
 const buttonSend = document.querySelector('#buttonSend')
-const messageBox = document.querySelector('#messageBox')
+const messageBox = document.querySelector('#messageBox')	
 
 const templateMessageSender = message => {
 	const temporaryDiv = document.createElement('div')
